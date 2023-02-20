@@ -44,7 +44,7 @@ android {
 
     defaultConfig {
         applicationId "dev.trongtin.voz"
-        minSdkVersion flutter.minSdkVersion
+        minSdkVersion 23
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
@@ -61,12 +61,6 @@ flutter {
     source '../..'
 }
 
-plugin {
-    id 'com.google.gms.google-services'
-}
-
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation platform('com.google.firebase:firebase-bom:31.2.2')
-    implementation 'com.google.firebase:firebase-analytics-ktx'
 }
